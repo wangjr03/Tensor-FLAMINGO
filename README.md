@@ -31,7 +31,7 @@ The standard sparse-matrix format scHi-C data is accepted
 chr1 12345 chr1 13456
 ```
 ## Example of reconstructing the 3D genome structure with Tensor-FLAMINGO and tFLAMINGOr
-Supposing the scHi-C data for all single cells are stored at `./data`, the following code preprocesses the data.
+Here we shown an example of reconstructing the single-cell 3D chromosome structures in 10kb resolution. Supposing the scHi-C data for all single cells are stored at `./data`, the following code preprocesses the data.
 ```
 library(tFLAMINGOr)
 # first generate contact maps at low-resolution (300kb)
