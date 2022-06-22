@@ -12,7 +12,7 @@ Tensor-FLAMINGO takes scHi-C data for tens to hundreds of single cells as inputs
 ## Dependencies
 The implementation of the algorithm is based on python/3.8 and R/3.5.1. It depends on three R packages (Matrix, FLAMINGOr and GenomicFeatures) and seven python libraries (pyfftw, scipy, numpy, pandas, math, joblib and ray).
 
-## Installation of the Tensor-FLAMINGOr package
+## Installation of Tensor-FLAMINGO
 The code for the first step is available in the Github: <br>
 ```
 git clone https://github.com/wangjr03/Tensor-FLAMINGO.git
