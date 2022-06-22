@@ -4,10 +4,10 @@
 ![chr21_Dip-C](./predictions/images/chr21_Dip-C.png)
 
 ## Summary
-Tensor-FLAMINGO aims to accurately reconstruct the 3D chromatin structures for each single cell from super sparse scHi-C contact maps (missing rate > 99.95%). Remarkablely, the tensor-completion-based method borrows information across single cells, while preserving the unique 3D chromatin structures of each single cell.
+Tensor-FLAMINGO aims to accurately reconstruct the 3D chromatin structures for each single cell from super sparse scHi-C contact maps (missing rate > 99.95%). Remarkablely, the tensor-completion-based method borrows information across single cells, while preserving the unique structural variations across single cells.
 
 ## Introduction
-Tensor-FLAMINGO takes scHi-C data for tens to hundreds of single cells as inputs and reconstruct the 3D chromatin structure for each single cell. Tensor-FLAMINGO has two major steps. In the first step, the contact maps of all single cells are modeled as a sparse tensor and then complted using the low-rank tensor completion method. This step gives a much denser contact maps (missing rate 90%-95%) for each single cell. In the second step, the 3D genome structures are reconstructed for each single cell from the completed contact map using [FLAMINGO](https://github.com/wangjr03/FLAMINGO/).
+Tensor-FLAMINGO takes scHi-C data of tens to hundreds of single cells as inputs and reconstructs the single-cell 3D chromatin structures. Tensor-FLAMINGO has two major steps. In the first step, the contact maps of all single cells are modeled as a sparse tensor and then completed using the low-rank tensor completion method. This step gives a dense tensor and imputes the missing values of the original scHi-C data. In the second step, the 3D genome structures are reconstructed for each single cell from the completed chromatin contact map using [FLAMINGO](https://github.com/wangjr03/FLAMINGO/).
 
 ## Dependencies
 The implementation of the algorithm is based on python/3.8 and R/3.5.1. It depends on three R packages (Matrix, FLAMINGOr and GenomicFeatures) and seven python libraries (pyfftw, scipy, numpy, pandas, math, joblib and ray).
