@@ -4,7 +4,7 @@
 ![chr21_Dip-C](./predictions/images/chr21_Dip-C.png)
 
 ## Summary
-Tensor-FLAMINGO aims to accurately reconstruct the 3D chromatin structures for each single cell from super sparse scHi-C contact maps (missing rate > 99.95%). Remarkablely, the tensor-completion-based method borrows information across single cells, while preserving the unique structural variations across single cells.
+Tensor-FLAMINGO aims to accurately reconstruct the 3D chromatin structures for every single cell from super sparse scHi-C contact maps (missing rate > 99.95%). Remarkably, the tensor-completion-based method borrows information across single cells, while preserving the unique structural variations across single cells.
 
 ## Introduction
 Tensor-FLAMINGO takes scHi-C data of tens to hundreds of single cells as inputs and reconstructs the single-cell 3D chromatin structures. Tensor-FLAMINGO has two major steps. In the first step, the contact maps of all single cells are modeled as a sparse tensor and then completed using the low-rank tensor completion method. This step gives a dense tensor and imputes the missing values of the original scHi-C data. In the second step, the 3D genome structures are reconstructed for each single cell from the completed chromatin contact map using [FLAMINGO](https://github.com/wangjr03/FLAMINGO/).
