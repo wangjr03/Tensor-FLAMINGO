@@ -16,6 +16,7 @@ dat = np.load(input_path)
 threshold = args.t
 alpha = args.alpha
 os.mkdir(output_path)
+
 for idx,mat in enumerate(dat):
     tmp_mat = np.real(mat)
     if_mat = tmp_mat
