@@ -223,4 +223,3 @@ X,log = opt(sc_tensor,omega,tol,max_iter,mu,max_mu,rho)
 np.save(output_path+'/'+suffix, X)
 log = pd.DataFrame(log)
 log.to_csv(output_path+'/'+suffix+".txt",sep='\t')
-
