@@ -10,7 +10,7 @@ Tensor-FLAMINGO aims to accurately reconstruct the 3D chromatin structures for e
 Tensor-FLAMINGO takes scHi-C data of tens to hundreds of single cells as inputs and reconstructs the single-cell 3D chromatin structures. Tensor-FLAMINGO has two major steps. In the first step, the contact maps of all single cells are modeled as a sparse tensor and then completed using the low-rank tensor completion method. This step gives a dense tensor and imputes the missing values of the original scHi-C data. In the second step, the 3D genome structures are reconstructed for each single cell from the completed chromatin contact map using [FLAMINGO](https://github.com/wangjr03/FLAMINGO/).
 
 ## Dependencies
-The implementation of the algorithm is based on python/3.8 and R/3.5.1. It depends on three R packages (Matrix, FLAMINGOr and GenomicFeatures) and seven python libraries (pyfftw, scipy, numpy, pandas, math, joblib and ray).
+The implementation of the algorithm is based on python/3.8.2 and R/3.5.1. It depends on three R packages (Matrix, FLAMINGOr and GenomicFeatures) and seven python libraries (pyfftw, scipy, numpy, pandas, math, joblib and ray).
 
 ## Installation of Tensor-FLAMINGO
 The code for the first step is available in the Github: <br>
