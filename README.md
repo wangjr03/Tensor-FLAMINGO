@@ -53,7 +53,7 @@ The standard sparse-matrix format scHi-C data is accepted
 chr1 12345 chr1 13456
 ```
 
-## **UPDATE** One command line to run Tensor FLAMINGO
+## !!!UPDATE!!! One command line to run Tensor FLAMINGO
 
 Usage
 ```
