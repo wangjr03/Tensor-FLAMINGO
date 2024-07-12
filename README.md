@@ -52,6 +52,19 @@ The standard sparse-matrix format scHi-C data is accepted
 ```
 chr1 12345 chr1 13456
 ```
+
+## **UPDATE** One command line to run Tensor FLAMINGO
+
+Usage
+```
+bash tflamingo_main.sh --code_dir <CODE_DIR> --data_path <DATA_PATH> --output_dir <OUTPUT_DIR> --chr_name <CHR_NAME> --assembly <ASSEMBLY> --low_resolution <LOW_RESOLUTION> --high_resolution <HIGH_RESOLUTION>
+```
+
+Example
+```
+bash tflamingo_main.sh --code_dir "./Tensor-FLAMINGO/" --data_path "./data/" --output_dir "./output/" --chr_name "chr19" --assembly "mm10" --low_resolution 10000 --high_resolution 300000
+```
+
 ## Example of reconstructing the 3D genome structure with Tensor-FLAMINGO and tFLAMINGOr
 Here we shown an example of reconstructing the single-cell 3D chromosome structures in 10kb resolution. Supposing the scHi-C data for all single cells are stored at `./data`, the following code preprocesses the data.
 ```
@@ -73,7 +86,7 @@ Applies tensor-completion method
 python src/Paralized_Low_rank_tensor_completion_FFTW.py -i './300kb_contact_maps_transformed' -o './LRTC_300kb_contact_maps' -s 300kb -max_iter 150 -n_core 10
 python src/Paralized_Low_rank_tensor_completion_FFTW.py -i './10kb_contact_maps_transformed' -o './LRTC_10kb_contact_maps' -s 10kb -max_iter 150 -n_core 10
 python src/Extract_matrix_from_LRTC.py -i './LRTC_300kb_contact_maps/300kb.npy' -o './300kb_contact_maps_FLAMINGO'
-python src/Extract_matrix_from_LRTC.py -i './LRTC_10kb_contact_maps/10kb/npy' -o './10kb_contact_maps_FLAMINGO'
+python src/Extract_matrix_from_LRTC.py -i './LRTC_10kb_contact_maps/10kb.npy' -o './10kb_contact_maps_FLAMINGO'
 ```
 Reconstruct the 3D chromatin structures:
 ```
