@@ -62,7 +62,7 @@ bash tflamingo_main.sh --code_dir <CODE_DIR> --data_path <DATA_PATH> --output_di
 
 Example
 ```
-bash tflamingo_main.sh --code_dir "./Tensor-FLAMINGO/" --data_path "./data/" --output_dir "./output/" --chr_name "chr19" --assembly "mm10" --low_resolution 10000 --high_resolution 300000
+bash tflamingo_main.sh --code_dir "./Tensor-FLAMINGO/" --data_path "./data/" --output_dir "./output/" --chr_name "chr19" --assembly "mm10" --low_resolution 300000 --high_resolution 10000
 ```
 
 ## Example of reconstructing the 3D genome structure with Tensor-FLAMINGO and tFLAMINGOr
