@@ -17,7 +17,7 @@ tflamingo.process_one_file <- function(input_path,resolution,opt_path,assembly,s
     chr_size <- GenomicFeatures::getChromInfoFromUCSC(assembly)
     raw_df <- raw_data[,c(1,2,4)]
     chr_split_df <- split(raw_df,raw_df[,1])
-    for(i in c(1:22,'X')){
+    for(i in c(1:20,'X')){
         path <- paste0(opt_path,'/chr',i)
         if(!dir.exists(path)){
           dir.create(path)
