@@ -57,12 +57,24 @@ chr1 12345 chr1 13456
 
 Usage
 ```
-bash tflamingo_main.sh --code_dir <CODE_DIR> --data_path <DATA_PATH> --output_dir <OUTPUT_DIR> --chr_name <CHR_NAME> --assembly <ASSEMBLY> --low_resolution <LOW_RESOLUTION> --high_resolution <HIGH_RESOLUTION>
+bash tflamingo_main.sh  --code_dir <CODE_DIR> \
+                        --data_path <DATA_PATH> \
+                        --output_dir <OUTPUT_DIR> \
+                        --chr_name <CHR_NAME> \
+                        --assembly <ASSEMBLY> \
+                        --low_resolution <LOW_RESOLUTION> \
+                        --high_resolution <HIGH_RESOLUTION> 
 ```
 
 Example
 ```
-bash tflamingo_main.sh --code_dir "./Tensor-FLAMINGO/" --data_path "./data/" --output_dir "./output/" --chr_name "chr19" --assembly "mm10" --low_resolution 300000 --high_resolution 10000
+bash tflamingo_main.sh  --code_dir "./Tensor-FLAMINGO/" \
+                        --data_path "./data/" \
+                        --output_dir "./output/" \
+                        --chr_name "chr19" \
+                        --assembly "mm10" \
+                        --low_resolution 300000 \
+                        --high_resolution 10000
 ```
 
 ## Output data format
