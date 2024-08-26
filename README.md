@@ -65,7 +65,21 @@ Example
 bash tflamingo_main.sh --code_dir "./Tensor-FLAMINGO/" --data_path "./data/" --output_dir "./output/" --chr_name "chr19" --assembly "mm10" --low_resolution 300000 --high_resolution 10000
 ```
 
-## Example of reconstructing the 3D genome structure with Tensor-FLAMINGO and tFLAMINGOr
+## output data format
+For each single cell, a data frame with four columns containing the fragment id (the first column) and the 3D coordinates (the other three columns) will be generated.
+
+## visualize the 3D genome structure using ParaView
+Similar to FLAMINGO, Tensor-FLAMINGO predictions can also be visualized using ParaView. To visualize the 3D genome structure using FLAMINGO, the user need to convert the 3D coordinates into a *.vtk* file. In the **FLAMINGOr** package, a `write.vtk` function is provided for such conversion using the command below:<br>
+```
+write.vtk(points=res[,-1],lookup_table=rep(1,dim(res)[1]),name='chr1 5kb 3D structure',opt_path='./chr1_5kb.vtk')
+```
+*Arguments*:<br>
+
+*points*: 3D coordinates predicted by FLAMINGO in the x,y,z format. <br>
+
+
+
+## Step-by-step Instruction
 Here we shown an example of reconstructing the single-cell 3D chromosome structures in 10kb resolution. Supposing the scHi-C data for all single cells are stored at `./data`, the following code preprocesses the data.
 ```
 library(tFLAMINGOr)
@@ -114,17 +128,7 @@ for(idx in 1:n){
   )
 }
 ```
-### output data format
-For each single cell, a data frame with four columns containing the fragment id (the first column) and the 3D coordinates (the other three columns) will be generated.
 
-### visualize the 3D genome structure using ParaView
-Similar to FLAMINGO, Tensor-FLAMINGO predictions can also be visualized using ParaView. To visualize the 3D genome structure using FLAMINGO, the user need to convert the 3D coordinates into a *.vtk* file. In the **FLAMINGOr** package, a `write.vtk` function is provided for such conversion using the command below:<br>
-```
-write.vtk(points=res[,-1],lookup_table=rep(1,dim(res)[1]),name='chr1 5kb 3D structure',opt_path='./chr1_5kb.vtk')
-```
-*Arguments*:<br>
-
-*points*: 3D coordinates predicted by FLAMINGO in the x,y,z format. <br>
 
 *lookup_table*: The annotation of each point, could be labels or scores, i.e. the compartment PC scores.<br>
 
