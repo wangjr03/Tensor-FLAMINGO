@@ -1,4 +1,0 @@
-python E:/tflam/Tensor-FLAMINGO/src/Paralized_Low_rank_tensor_completion_FFTW.py -i E:/tflam/runflam/testmy/lowres_contact_maps_transformed -o E:/tflam/runflam/testmy/LRTC_low_res_contact_maps -s low_resolution -max_iter 150 -n_core 10
-python E:/tflam/Tensor-FLAMINGO/src/Extract_matrix_from_LRTC.py -i E:/tflam/runflam/testmy/LRTC_low_res_contact_maps/low_resolution.npy -o E:/tflam/runflam/testmy/low_res_contact_maps_FLAMINGO 
-python E:/tflam/Tensor-FLAMINGO/src/Paralized_Low_rank_tensor_completion_FFTW.py -i E:/tflam/runflam/testmy/highres_contact_maps_transformed -o E:/tflam/runflam/testmy/LRTC_high_res_contact_maps -s high_resolution -max_iter 150 -n_core 10
-python E:/tflam/Tensor-FLAMINGO/src/Extract_matrix_from_LRTC.py -i E:/tflam/runflam/testmy/LRTC_high_res_contact_maps/high_resolution.npy -o E:/tflam/runflam/testmy/high_res_contact_maps_FLAMINGO 
