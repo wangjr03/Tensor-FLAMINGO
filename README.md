@@ -46,7 +46,7 @@ install_github('wangjr03/Tensor-FLAMINGO/tFlamingorLite')
 ## Input data
 The standard sparse-matrix format scHi-C data is accepted
 ```
-| chr1 | 12345 | chr1 | 13456|
+chr1 12345 chr1 13456
 ```
 ## Input parameters
 
