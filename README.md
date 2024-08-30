@@ -46,17 +46,19 @@ install_github('wangjr03/Tensor-FLAMINGO/tFlamingorLite')
 ## Input data
 The standard sparse-matrix format scHi-C data is accepted
 ```
-chr1 12345 chr1 13456
+| chr1 | 12345 | chr1 | 13456|
 ```
 ## Input parameters
 
-_input_folder:_ The folder path to input data, can only contain scHi-C data files.\\
-chr_name: The desired chromosome, e.g."chr19"
-low_res: The domain-level low resolution used for FLAMINGO reconstruction.
-high_res: The bin-level high resolution desired for final results.
-assembly: The genome assembly version of input data.
-outputs_folder: The folder to store all intermediate and final outputs.
-code_path: The path of where tFLAMINGOrLite is, i.e."../Tensor-FLAMINGO"
+_input_folder:_ The folder path to input data, can only contain scHi-C data files.  
+
+_chr_name:_ The desired chromosome, e.g."chr19"  
+
+_low_res:_ The domain-level low resolution used for FLAMINGO reconstruction.  
+_high_res:_ The bin-level high resolution desired for final results.  
+_assembly:_ The genome assembly version of input data.  
+_outputs_folder:_ The folder to store all intermediate and final outputs.  
+_code_path:_ The path of where tFLAMINGOrLite is, i.e."../Tensor-FLAMINGO"  
 
 
 ## One command line to run Tensor FLAMINGO
