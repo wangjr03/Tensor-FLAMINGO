@@ -13,6 +13,8 @@ flamingo.divide_domain <- function(temp_folder,flamingo_obj,domain_res,frag_res)
   dir.create(paste0(temp_folder,"/Domain_data"))
   dir.create(paste0(temp_folder,'/Genomic_loc'))
   n = flamingo_obj@n_frag
+  domain_res=as.numeric(domain_res)
+  frag_res=as.numeric(frag_res)
   bin_size = domain_res/frag_res
   if(bin_size != round(bin_size)){
     stop('The domain resolution is not an integer multiple of the fragment resolution!')
