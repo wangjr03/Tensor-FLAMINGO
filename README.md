@@ -50,7 +50,7 @@ chr1 12345 chr1 13456
 ```
 ## Input parameters
 
-input_folder: The folder path to input data, can only contain scHi-C data files.
+_input_folder:_ The folder path to input data, can only contain scHi-C data files.\\
 chr_name: The desired chromosome, e.g."chr19"
 low_res: The domain-level low resolution used for FLAMINGO reconstruction.
 high_res: The bin-level high resolution desired for final results.
