@@ -83,7 +83,7 @@ bash tflamingo_pipeline.sh --input_folder "../input_scHiC_data" \
                            --code_path "../Tensor-FLAMINGO"
 
 ```
-
+`run.sh` provides an example to run on SLURM job scheduler.
 ## Output data format
 For each single cell, a data frame with four columns containing the fragment id (the first column) and the 3D coordinates (the other three columns) will be generated and stored in "OUTPUTS_FOLDER/Tensor-FLAMINGO_results"
 
