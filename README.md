@@ -48,8 +48,18 @@ The standard sparse-matrix format scHi-C data is accepted
 ```
 chr1 12345 chr1 13456
 ```
+## Input parameters
+```
+input_folder: The folder path to input data, can only contain scHi-C data files.
+chr_name: The desired chromosome, e.g."chr19"
+low_res: The domain-level low resolution used for FLAMINGO reconstruction.
+high_res: The bin-level high resolution desired for final results.
+assembly: The genome assembly version of input data.
+outputs_folder: The folder to store all intermediate and final outputs.
+code_path: The path of where tFLAMINGOrLite is, i.e."../Tensor-FLAMINGO"
+```
 
-## !!!UPDATE!!! One command line to run Tensor FLAMINGO
+## One command line to run Tensor FLAMINGO
 
 Usage
 ```
@@ -62,7 +72,7 @@ bash tflamingo_pipeline.sh  --input_folder <INPUT_FOLDER> \
                         --code_path <CODE_PATH> 
 ```
 
-Example ("code_path" must be where the Tensor-FLAMINGO is)
+Example 
 ```
 bash tflamingo_pipeline.sh --input_folder "../input_scHiC_data" \
                            --chr_name "chr21" \
@@ -92,8 +102,8 @@ write.vtk(points=res[,2:4],lookup_table=rep(1,dim(res)[1]),name='chr21 5kb 3D st
 
 *opt_path*: output file path including the file name. <br>
 
-## Step-by-step Instruction (Advanced)
-Here we shown an example of reconstructing the single-cell 3D chromosome structures in 10kb resolution. Supposing the scHi-C data for all single cells are stored at `./data`, the following code preprocesses the data.
+## Step-by-step Instruction 
+Here we shown an example of reconstructing the single-cell 3D chromosome structures.
 ```
 tFlamingorLite::tflamingo.data_prepare(code_path, input_folder, low_res, high_res, outputs_folder, chr_name, assembly)
 ```
