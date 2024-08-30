@@ -13,7 +13,7 @@ Tensor-FLAMINGO takes scHi-C data of tens to hundreds of single cells as inputs 
 The implementation of the algorithm is based on but not necessarily restricted to `python/3.11.5` and `R/4.3.3`
 
 ### R packages
-`tFlamingorLite` and `GenomeInfoDb` 
+`GenomeInfoDb` 
 
 ```
 if (!require("BiocManager", quietly = TRUE))
