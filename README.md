@@ -13,7 +13,7 @@ Tensor-FLAMINGO takes scHi-C data of tens to hundreds of single cells as inputs 
 The implementation of the algorithm is based on but not necessarily restricted to `python/3.11.5` and `R/4.3.3`
 
 ### R packages
-`GenomeInfoDb` 
+`GenomeInfoDb` and `prodlim`, `mgcv`, `progress` if not already installed based on the R version used.
 
 ```
 if (!require("BiocManager", quietly = TRUE))
@@ -21,7 +21,11 @@ if (!require("BiocManager", quietly = TRUE))
 
 BiocManager::install("GenomeInfoDb")
 ```
-
+```
+install.packages("prodlim")
+install.packages("mgcv")
+install.packages("progress")
+```
 
 ### python packages
 `pyfftw`, `scipy`, `numpy`, `pandas`, `joblib` and `ray`.
