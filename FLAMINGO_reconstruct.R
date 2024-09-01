@@ -23,7 +23,7 @@ for (idx in 1:n) {
   res_list[[idx]] <- tFlamingorLite::tflamingo.main_func(outputs_folder, idx,input_PD_high, 
                                                        input_IF_high, input_PD_low, input_IF_low, 
                                                        domain_res=low_res, frag_res = high_res, 
-                                                       chr_name = chr_name, nThread = 4, 
+                                                       chr_name = chr_name, nThread = 20, 
                                                        sample_rate = 0.75, lambda = 10, 
                                                        max_dist = 0.01,
                                                        error_threshold = 1e-3,max_iter = 500)
