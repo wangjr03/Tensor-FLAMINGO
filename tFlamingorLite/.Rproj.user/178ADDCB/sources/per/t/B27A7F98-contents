@@ -1,0 +1,24 @@
+tflamingo_backbone <- function(tflamingo_low_res_obj,
+                               sample_rate,
+                               lambda,
+                               r,
+                               max_dist,
+                               error_threshold,
+                               max_iter,
+                               alpha,
+                               inf_dist)
+{
+  input_if = tflamingo_low_res_obj@IF
+  flamingo_backbone_prediction = flamingo_basic(input_if = input_if,
+                                                sample_rate = sample_rate,
+                                                lambda = lambda,
+                                                r = r,
+                                                max_dist = max_dist,
+                                                error_threshold = error_threshold,
+                                                max_iter = max_iter,
+                                                alpha = alpha,
+                                                inf_dist = inf_dist)
+
+  return(flamingo_backbone_prediction)
+
+}

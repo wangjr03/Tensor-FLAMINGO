@@ -1,0 +1,26 @@
+{
+    "id": "612D8359",
+    "path": "E:/tflam/tFlamingorLite/tFlamingorLite/R/tflamingo.load_data.R",
+    "project_path": "R/tflamingo.load_data.R",
+    "type": "r_source",
+    "hash": "1654212909",
+    "contents": "",
+    "dirty": false,
+    "created": 1724877416050.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "11,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1724877497,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1724877497197,
+    "read_only": false,
+    "read_only_alternatives": []
+}
