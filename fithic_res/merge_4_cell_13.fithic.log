@@ -1,0 +1,38 @@
+
+
+Interactions file read successfully
+------------------------------------------------------------------------------------
+Observed, Intra-chr in range: pairs= 41616	 totalCount= 3479866
+Observed, Intra-chr all: pairs= 41616	 totalCount= 3479866
+Observed, Inter-chr all: pairs= 0	 totalCount= 0
+Range of observed genomic distances [120000 38400000]
+
+Making equal occupancy bins
+------------------------------------------------------------------------------------
+Observed intra-chr read counts in range	3479866
+Desired number of contacts per bin	34798.66,
+Number of bins	100
+Equal occupancy bins generated
+
+Looping through all possible fragment pairs in-range
+------------------------------------------------------------------------------------
+Chromosome '21',	289 mappable fragments, 	35400 possible intra-chr fragment pairs in range,	0 possible inter-chr fragment pairs
+Number of all fragments= 289
+Possible, Intra-chr in range: pairs= 35400 
+Possible, Intra-chr all: pairs= 41905.0 
+Possible, Inter-chr all: pairs= 0.0 
+Desired genomic distance range   [0 inf] 
+Range of possible genomic distances  [120000  48000000] 
+Baseline intrachromosomal probability is 2.3863500775563776e-05 
+Interchromosomal probability is 0 
+
+Calculating probability means and standard deviations of contact counts
+------------------------------------------------------------------------------------
+Means and error written to /mnt/ufs18/rs-027/compbio/wanglab/haowang/Proj13_Recon_3D_single_cell/data/diff_res_GM12878_DipC_fithic/fithic_res/merge_4_cell_13.fithic_pass1.res120000.txt
+
+
+Fitting a univariate spline to the probability means
+------------------------------------------------------------------------------------
+Spline successfully fit
+
+
