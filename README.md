@@ -28,12 +28,12 @@ install.packages("progress")
 ```
 
 ### python packages
-`pyfftw`, `scipy`, `numpy`, `pandas`, `joblib` and `ray`.
+`pyfftw`, `scipy`, `numpy`, `pandas`, `joblib` and `ray`. 
 
 ```
 pip install -r requirements.txt
 ```
-
+Tip: users may choose not to specify the package version when installing. 
 ## Installation of Tensor-FLAMINGO
 The code for the first step is available in the Github: <br>
 ```
