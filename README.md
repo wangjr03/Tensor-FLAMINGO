@@ -92,7 +92,7 @@ bash tflamingo_pipeline.sh --input_folder "../input_scHiC_data" \
 For each single cell, a data frame with four columns containing the fragment id (the first column) and the 3D coordinates (the other three columns) will be generated and stored in "OUTPUTS_FOLDER/Tensor-FLAMINGO_results"
 
 ## Visualize the 3D genome structure using ParaView
-Similar to FLAMINGO, Tensor-FLAMINGO predictions can also be visualized using ParaView. To visualize the 3D genome structure using FLAMINGO, the user need to convert the 3D coordinates into a *.vtk* file. In the **FLAMINGOr** package, a `write.vtk` function is provided for such conversion using the command below:<br>
+Similar to FLAMINGO, Tensor-FLAMINGO predictions can also be visualized using ParaView. To visualize the 3D genome structure using FLAMINGO, the user need to convert the 3D coordinates into a *.vtk* file. In the **tFlamingorLite** package, a `write.vtk` function is provided for such conversion using the command below:<br>
 ```
 write.vtk(points=res[,2:4],lookup_table=rep(1,dim(res)[1]),name='chr21 5kb 3D structure',opt_path='./chr21_10kb.vtk')
 ```
