@@ -58,7 +58,7 @@ fi
 
 ####
 echo "Data preprocessing ..."
-mkdir -r $OUTPUTS_FOLDER
+mkdir -p $OUTPUTS_FOLDER
 
 Rscript ${CODE_PATH}/data_preprocess.R $INPUT_FOLDER $CHR_NAME $LOW_RES $HIGH_RES $ASSEMBLY $OUTPUTS_FOLDER $CODE_PATH
 
