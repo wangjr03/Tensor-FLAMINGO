@@ -145,3 +145,7 @@ for (idx in 1:n) {
   write.table(res_list[[idx]], file = paste0(outputs_folder,"/Tensor-FLAMINGO_results/Cell_",idx,".txt"), sep = "\t", col.names = TRUE, row.names = FALSE)
 }
 ```
+## Citation
+If you use this repository in your research, please cite it as: 
+
+Wang, H., Yang, J., Yu, X., Zhang, Y., Qian, J., & Wang, J. (2024). Tensor-FLAMINGO unravels the complexity of single-cell spatial architectures of genomes at high-resolution. https://doi.org/10.5281/zenodo.13645233
